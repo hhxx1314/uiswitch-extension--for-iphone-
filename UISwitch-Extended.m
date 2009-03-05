@@ -27,7 +27,7 @@
 	return (UILabel *) [self viewWithTag:TAG_OFFSET + 2]; 
 }
 
-+ (UISwitch *) switchWithTag: (NSString *) tag1 andTag: (NSString *) tag2
++ (UISwitch *) switchWithLeftText: (NSString *) tag1 andRight: (NSString *) tag2
 {
 	UISwitch *switchView = [[UISwitch alloc] initWithFrame:CGRectZero];
 	

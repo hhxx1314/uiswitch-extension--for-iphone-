@@ -20,13 +20,13 @@
 	[switchView release];
 	
 	// Custom YES/NO
-	switchView = [UISwitch switchWithTag:@"YES" andTag:@"NO"];
+	switchView = [UISwitch switchWithLeftText:@"YES" andRight:@"NO"];
 	switchView.center = CGPointMake(160.0f, 60.0f);
 	switchView.on = YES;
 	[contentView addSubview:switchView];
 	
 	// Custom font and color
-	switchView = [UISwitch switchWithTag:@"Hello " andTag:@"ABC "];
+	switchView = [UISwitch switchWithLeftText:@"Hello " andRight:@"ABC "];
 	switchView.center = CGPointMake(160.0f, 100.0f);
 	switchView.on = YES;
 	[switchView.label1 setFont:[UIFont boldSystemFontOfSize:13.0f]];
@@ -35,7 +35,7 @@
 	[contentView addSubview:switchView];
 	
 	// Multiple lines
-	switchView = [UISwitch switchWithTag:@"Hello\nWorld" andTag:@"Bye\nWorld"];
+	switchView = [UISwitch switchWithLeftText:@"Hello\nWorld" andRight:@"Bye\nWorld"];
 	switchView.center = CGPointMake(160.0f, 140.0f);
 	switchView.on = YES;
 	[switchView.label1 setFont:[UIFont boldSystemFontOfSize:11.0f]];
